@@ -8,6 +8,7 @@ class Laptop:
         self.brand = brand
         self.ram = ram
         self.storage = storage
+        
 
 """Object: Dog
 Class: Pet
