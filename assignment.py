@@ -37,7 +37,7 @@ class Hostel:
         # save visitor name + ID, and resident name
         self.visits.append((visitor.name, visitor.IDno, resident.name))
         print(f"Visit recorded: {visitor.name} (ID: {visitor.IDno}) visited {resident.name}")
-        
+
         # Method to show all visits
     def show_visits(self):
         print(f"\nVisits at {self.name}:")
@@ -52,8 +52,8 @@ class Resident:
         self.roomNumber = room
 class visitor:
     def __init__(self,name,IDno):
-        self.name = name
-        self.IDno = IDno
+      self.name = name
+      self.IDno = IDno
 
 hostel = Hostel("David's Ark Hostel", "Ankrah hill")
 
