@@ -23,6 +23,16 @@ book1.describe()
 book2.describe()
 book3.describe()
 
+class Hostel:
+    def __init__(self, name, location):
+        self.name = name
+        self.location = location
+    
+    def mention(self):
+        print(f"{self.name} stays at {self.location}")
+
+hostel1 = Hostel("havy", "Sabiiti")
+print(hostel1.mention())
 
 
 
