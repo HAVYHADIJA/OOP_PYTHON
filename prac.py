@@ -36,4 +36,11 @@ print(hostel1.mention())
 
 
 
+random_str = "aaa"
+print(random_str.upper())
+
+hostel2 = Hostel("Merinah","ST.MICHEAL")
+print(hostel2.mention())
+
+
         
