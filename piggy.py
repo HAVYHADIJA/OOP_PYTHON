@@ -22,7 +22,6 @@ class Piggybank:
         return self._coins
         
         
-
 Havy = Piggybank(10000)
 Havy.put_in(5000)
 print("Havy's Box has", Havy.how_much(), "coins")
