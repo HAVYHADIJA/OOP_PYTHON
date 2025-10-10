@@ -43,6 +43,21 @@ class ATM:
 #getter method to access the account balance
     def get_account_balance(self):
         return self.__account_balance
+    
+
+
+
+
+
+class Car:
+    def __init__(self,speed,color):
+        print(speed)
+        print(color)
+        self.speed = speed
+        self.color = color
+        print ("The __init__ is called")
+ford =  Car (200, "Grey")
+
 
 
 
