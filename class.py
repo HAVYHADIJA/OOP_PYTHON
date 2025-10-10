@@ -57,6 +57,10 @@ class Car:
         self.color = color
         print ("The __init__ is called")
 ford =  Car (200, "Grey")
+honda = Car (250 , "Blue")
+audi = Car (300 , "Black")
+print (ford.speed)
+print (audi.color)
 
 
 
