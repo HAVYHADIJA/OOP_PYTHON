@@ -33,13 +33,12 @@ class ATM:
 #getter method to access the pin available
     def get_pin(self):
         return self.__pin
-#setter method for account balannce
+#setter method for account balance
     def set_account_balance(self, amount):
         if amount >= 0:
             self.__account_balance = amount
         else:
             print("Invalid amount. Account balance cannot be negative.")
-
 #getter method to access the account balance
     def get_account_balance(self):
         return self.__account_balance
@@ -64,6 +63,20 @@ print (audi.color)
 
 
 
+
+
+
+class Hello:
+    def __init__(self,name):
+        self.a = 10
+        self._b =20
+        self.__c = 30
+
+hello = Hello("name")
+print (hello.a)      #public
+print (hello._b)     #protected
+print (hello._Hello__c) #private
+        
 
         
         
