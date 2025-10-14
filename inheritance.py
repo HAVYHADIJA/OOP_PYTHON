@@ -11,10 +11,15 @@ person1 = Person("Haddy")
 print (person1.name)
 
 class Student(Person):
-    pass
+    def __init__(self, name, program, year):
+        super().__init__(name)
+        self.program = program
+        self.year = year
 
 class Lecturer(Person):
-    pass
+    def __init__(self, name, department):
+        super().__init__(name)
+        self.department = department
     
 p = Person("Boaz")
 s = Student("Steve")
