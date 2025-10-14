@@ -9,3 +9,17 @@ class Person:
 person1 = Person("Haddy")
 
 print (person1.name)
+
+class Student(Person):
+    pass
+
+class Lecturer(Person):
+    pass
+    
+p = Person("Boaz")
+s = Student("Steve")
+l = Lecturer("Theo")
+
+print(p.introduce())
+print(s.introduce())
+print(l.introduce())
