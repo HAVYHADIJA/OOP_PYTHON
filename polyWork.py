@@ -12,7 +12,7 @@ class Fulltime(Employee):
         self.Job_Tittle = Job_Tittle
         self.salary =salary
     def calculate_salary(self):
-        return self.salary  
+        return self.salary  #Fixed Salary
 
 class Parttime(Employee):
     def __init__(self, name, rate_per_session, sessions):
@@ -21,7 +21,7 @@ class Parttime(Employee):
         self.sessions = sessions
 
     def calculate_salary(self):
-        return self.rate_per_session * self.sessions 
+        return self.rate_per_session * self.sessions #Payment based on Sessions
 
 class Intern(Employee):
     def __init__(self, name, supervisor,department, duration_months, lunch_allowance = 0):
