@@ -54,25 +54,24 @@ class PoliticalParty:
 
 class PartyA(PoliticalParty):
     def slogan(self):
-        return "Party A: Unity and Progress!"
+        return "Party A: Our Power"
 
 
 class PartyB(PoliticalParty):
     def slogan(self):
-        return "Party B: Together for Change!"
+        return "Party B: Protecting the gains!"
 
 
-# Child class 3
 class PartyC(PoliticalParty):
     def slogan(self):
-        return "Party C: Empowering the Future!"
+        return "Party C: Empower Servantl_Leadweship!"
 
 
 # Demonstrating polymorphism
 parties = [PartyA(), PartyB(), PartyC()]
 
 for party in parties:
-    print(party.slogan())
+   print(party.slogan())
 
 
 
