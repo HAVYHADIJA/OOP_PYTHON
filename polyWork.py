@@ -34,6 +34,11 @@ class Intern(Employee):
     def calculate_salary(self):
         # Total pay for the internship period
         return self.lunch_allowance* self.duration_months
+    
+    def get_intern_details(self):
+        return f"Intern: {self.name}, Supervisor: {self.supervisor}, Department: {self.department}, Duration: {self.duration_months} months"
+
+
 
 
         
