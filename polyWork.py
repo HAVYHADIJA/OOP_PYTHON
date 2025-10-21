@@ -38,6 +38,41 @@ class Intern(Employee):
     def get_intern_details(self):
         return f"Intern: {self.name}, Supervisor: {self.supervisor}, Department: {self.department}, Duration: {self.duration_months} months"
 
+f = Fulltime("Richard", "Developer", 1500000)
+p = Parttime("Sarah", 20000, 10)
+i = Intern("Havy", "Ms. Grace", "IT Department", 3, 3000)
+
+print
+
+
+# Polymorphism exampale 2
+
+class PoliticalParty:
+    def slogan(self):
+        pass
+
+
+class PartyA(PoliticalParty):
+    def slogan(self):
+        return "Party A: Unity and Progress!"
+
+
+class PartyB(PoliticalParty):
+    def slogan(self):
+        return "Party B: Together for Change!"
+
+
+# Child class 3
+class PartyC(PoliticalParty):
+    def slogan(self):
+        return "Party C: Empowering the Future!"
+
+
+# Demonstrating polymorphism
+parties = [PartyA(), PartyB(), PartyC()]
+
+for party in parties:
+    print(party.slogan())
 
 
 
