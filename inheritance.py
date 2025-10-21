@@ -22,8 +22,8 @@ class Lecturer(Person):
         self.department = department
     
 p = Person("Boaz")
-s = Student("Steve")
-l = Lecturer("Theo")
+s = Student("Steve", "BSDS", 2)
+l = Lecturer("Theo","Department of Computing")
 
 print(p.introduce())
 print(s.introduce())
