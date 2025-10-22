@@ -51,20 +51,17 @@ class PoliticalParty:
     def slogan(self):
         pass
 
-
 class PartyA(PoliticalParty):
     def slogan(self):
         return "Party A: Our Power"
-
 
 class PartyB(PoliticalParty):
     def slogan(self):
         return "Party B: Protecting the gains!"
 
-
 class PartyC(PoliticalParty):
     def slogan(self):
-        return "Party C: Empower Servantl_Leadweship!"
+        return "Party C: Empower Servant_Leadership!"
 
 
 # Demonstrating polymorphism
