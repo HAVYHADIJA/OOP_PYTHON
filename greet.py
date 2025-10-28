@@ -14,4 +14,5 @@ class Danvick(Ben,Cathy):
     pass
 
 d = Danvick()
-print(d.greet()) #
+print(d.greet()) #here it will always print the first one from left to right
+
