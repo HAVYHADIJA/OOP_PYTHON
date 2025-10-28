@@ -13,3 +13,8 @@ class Laptop(Gadget):
     def start(self):
         print("Laptop is starting")
 
+gadgets =[Phone(), Laptop()]
+
+for gadget in gadgets:
+    gadget.start()
+
