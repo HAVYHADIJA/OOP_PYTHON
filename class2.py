@@ -24,7 +24,9 @@ class WifiEnabled:
     def connect_wifi(self):
         print("Connected to Wifi!")
 
-class Smartphone(Gadget,CameraFeature,WifiEnabled):
-    
+class Smartphone(Phone,CameraFeature,WifiEnabled):
+    def start(self):
+        print("Smartphone is starting")
+
 
 
