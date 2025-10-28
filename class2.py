@@ -28,5 +28,17 @@ class Smartphone(Phone,CameraFeature,WifiEnabled):
     def start(self):
         print("Smartphone is starting")
 
+class Smartprinter(Gadget,WifiEnabled):
+    def start(self):
+        print("Smartprinter is starting")
+
+devices =[Smartphone(), Smartprinter()]
+for device in devices:
+    device.start()
+    if isinstance(device, CameraFeature):
+        device.take_photo()
+    if isinstance(device, WifiEnabled):
+        device.connect_wifi()
+        
 
 
