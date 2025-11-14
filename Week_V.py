@@ -40,5 +40,9 @@ class Car(Vehicle):
         super().__init__()
 
     def display_Info(self):
-        print()
+        print(f"This car has,{self.num_doors}doors")
+
+Car1 = Car(7)
+
+
     
