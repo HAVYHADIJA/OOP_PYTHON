@@ -8,3 +8,16 @@ print(age)
 age.remove(12)
 print(age)
 
+siblings = {"Anna", "Elsa", "Olaf"}
+
+#SETS
+#A set has no duplicates
+
+#DICTIONARYS
+#A dictionary is a collection of key-value pairs
+Birthdates = {
+    "Havy": 18.05,
+    "Suzie" : 06.09,
+    "Anna" : 12.12,
+    "Rose": 07.07
+    }
