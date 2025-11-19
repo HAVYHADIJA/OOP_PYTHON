@@ -1,0 +1,9 @@
+parcel_id,recipient,priority,hub_id,destination,weight_kg
+P1,Lindah,EXPRESS,H1,Sabiiti,1.5
+P2, Eric,NORMAL,H4,Nsibambi,2.0
+P3,Gabriella,EXPRESS,H2,Davids Ark,3.0
+P4,Daisy,NORMAL,H3,Skyz,1.0
+P5,Nate,EXPRESS,H4,Tupe,0.5
+P6,Bree,NORMAL,H2,Ankrah,1.2
+P7,Martha,EXPRESS,H1,Luna,2.5
+P8,,NORMAL,H3,Sabiiti,1.8
