@@ -1,4 +1,4 @@
-patient = "John Smith"
+"""patient = "John Smith"
 age = 20
 is_new = True
 
@@ -56,5 +56,46 @@ print(names[2:4])
 names[0] = 'Jon'
 print(names)
 
+numbers = [1, 2, 3, 4, 5]
+print(len(numbers))
 
+numbers = [1,2,3,4,5,6]
+for item in numbers:
+    print(item)"""
+
+
+
+
+class Student:
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
+    def stay(self):
+        print(f"{self.name} stays in {self.house}")
+
+student1 = Student("Martha"," Kololo Flats")
+student1.stay()
+
+class Person:
+    def __init__(self, name, car):
+        self.name = name
+        self.car = car
+
+    def drives(self):
+        print(f"{self.name} drives a {self.car}")
+
+person1 = Person("Richard", "Range Rover")
+person1.drives()
+
+class Shape:
+    def __init__(self, color, sides):
+        self.color = color
+        self.sides = sides
+    def describe(self):
+        print(f"This shape is {self.color} and has {self.sides} sides.")
+shape_a = Shape("Blue", 3)
+shape_b = Shape("Red", 4)
+shape_c = Shape("Green", 5)
+shape_a.describe()
+shape_c.describe()
 
