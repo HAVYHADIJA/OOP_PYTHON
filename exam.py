@@ -8,3 +8,13 @@ print(f"You are {age} years old.")
 birth_year = int(input("Enter your birth year: "))
 age = 2025 - birth_year
 print(age)
+
+
+course = 'Python for Beginners'
+print(course.upper())
+print(course)
+
+course.lower()
+print(course.lower())
+
+print(course.replace('Beginners', 'Absolute Beginners'))
