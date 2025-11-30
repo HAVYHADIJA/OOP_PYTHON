@@ -126,9 +126,11 @@ print(Contact.contact_list[0].email)
 #it then overides the parent with its own method
 
 class Supplier(Contact):
-    def make_oder(self):
+    def make_order(self):
         print(f"Order made by {self.name} for {self.email}")
-    pass
+
+supplier1 = Supplier("Mike","Mike@gmail.com")
+supplier1.make_order
 
 
 #INHERITANCE WITH OVERRINDING
@@ -142,4 +144,15 @@ class Animal:
 class Dog(Animal):
     def make_sound(self):
         print("Woof woof")
-      
+
+#MULTIPLE INHERITANCE(METHOD RESOLUTION ORDER -MRO))
+class Anna:
+    def speak(self):
+        print("Anna speaks English")
+class Bree:
+    def speak(self):
+        print("Bree speaks French")
+class Clara(Anna,Bree):
+    pass
+clara = Clara()
+clara.speak()  #Output: Anna speaks English
