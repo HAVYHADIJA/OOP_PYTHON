@@ -34,3 +34,46 @@ class Student:
 student = Student("Zoe", 23)
 print(student.introduce())
         
+class Phone:
+    def __init__(self, brand, storage):
+        self.brand = brand
+        self.storage = storage
+    def make_call(self,phone_number):
+        print(f"I am calling {phone_number} from my {self.brand} phone")
+    def take_photo(self):
+        print(f"Taking a photo with my {self.brand}, {self.storage} is left")
+
+phone = Phone("Iphone13", "256gb")
+phone.make_call("0709517000")
+phone.take_photo()
+
+
+
+#ABSTRACTION
+from abc import ABC, abstractmethod
+class Vehicle(ABC):
+    @abstractmethod
+    def go(self):
+        pass
+    def stop(self):
+        pass
+
+class Car(Vehicle):
+    def go(self):
+        print("You drive the car")
+    def stop(self):
+        print("You stop the car")
+
+class MotorCycle(Vehicle):
+    def go(self):
+        print("You ride the MotorCycle")
+    def stop(self):
+        print("You stop the MotorCycle")
+
+car = Car()
+car.go()
+car.stop()
+
+motorcycle = MotorCycle()
+motorcycle.go()
+motorcycle.stop()
