@@ -1,3 +1,4 @@
+
 ## CLASS IN PYTHON WITHOUT ENCAPSULATION
 class ATM:
     def __init__(self,name,pin,account_balance):
