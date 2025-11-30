@@ -88,7 +88,7 @@ person1 = Person("Richard", "Range Rover")
 person1.drives()
 
 class Shape:
-    def __init__(self, color, sides):
+    def __init__(self, color, sides):# initialization without a default value 
         self.color = color
         self.sides = sides
     def describe(self):
@@ -99,3 +99,47 @@ shape_c = Shape("Green", 5)
 shape_a.describe()
 shape_c.describe()
 
+class BankAccount:
+    def __init__(self, balance = 0): #initialization with default value
+        self.balance = balance
+        def deposit(self,amount):
+            self.balance += amount
+        def withdraw(self,amount):
+            if amount <= self.balance:
+                self.balance -= amount
+            else:
+                print("Insufficient funds")
+
+
+#a class to represent an address book that keeps track of names and emails
+
+class Contact:
+    contact_list = []
+    def __init__(self,name,email):
+        self.name = name
+        self.email = email
+        Contact.contact_list.append(self)
+contact = Contact("Zoe","hnakalyowa29@gmail.com")
+print(Contact.contact_list[0].name)
+print(Contact.contact_list[0].email)
+#in this example, there is no method in the parent class that the subclass is inheriting but its inheriting the properties of the parent class
+#it then overides the parent with its own method
+
+class Supplier(Contact):
+    def make_oder(self):
+        print(f"Order made by {self.name} for {self.email}")
+    pass
+
+
+#INHERITANCE WITH OVERRINDING
+# OVERIDING  is  when a subclass uses a method in the parent class but differently or in a unique cool way
+class Animal:
+    def __init__(self,name,color):
+     self.name = name
+     self.color = color
+    def make_sound(self):
+        print("Animal can make Sound")
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof woof")
+      
