@@ -13,7 +13,7 @@ siblings = {"Anna", "Elsa", "Olaf"}
 #SETS
 #A set has no duplicates
 
-#DICTIONARYS
+#DICTIONARIES
 #A dictionary is a collection of key-value pairs
 Birthdates = {
     "Havy": 18.05,

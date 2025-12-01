@@ -7,7 +7,7 @@ class Employee:
 
 class Fulltime(Employee):
     def __init__(self,name,Job_Tittle,salary):
-        super().__init__()
+        super().__init__(name)
         self.name = name
         self.Job_Tittle = Job_Tittle
         self.salary =salary
@@ -40,9 +40,13 @@ class Intern(Employee):
 
 f = Fulltime("Richard", "Developer", 1500000)
 p = Parttime("Sarah", 20000, 10)
-i = Intern("Havy", "Ms. Grace", "IT Department", 3, 3000)
+i = Intern("Havy", "Ms. Grace", "IT Department", 3, 3)
 
-print
+
+print("Full-time Salary:", f.calculate_salary())
+print("Part-time Salary:", p.calculate_salary())
+print("Intern Total Allowance:", i.calculate_salary())
+print(i.get_intern_details())
 
 
 # Polymorphism exampale 2

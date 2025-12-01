@@ -20,13 +20,13 @@ class Phone:
         self.brand = brand
         self.storage = storage
 
-def call(self, number):
-    return f"Calling {number} from {self.brand}"
-def take_photo(self):
-    return f"Taking a photo with {self.brand} "
+    def call(self, number):
+        return f"Calling {number} from {self.brand}"
+    def take_photo(self):
+        return f"Taking a photo with {self.brand} "
 
-def play_music(self, song):
-    return f"Playing {song} on {self.brand}"
+    def play_music(self, song):
+        return f"Playing {song} on {self.brand}"
 
 Phone_1 = Phone("Iphone", "128GB")
 Phone_2 = Phone("Samsung","256GB")

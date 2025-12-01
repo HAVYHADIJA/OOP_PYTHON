@@ -77,3 +77,6 @@ car.stop()
 motorcycle = MotorCycle()
 motorcycle.go()
 motorcycle.stop()
+
+
+from abc import ABC, abstractmethod

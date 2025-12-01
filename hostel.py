@@ -16,7 +16,7 @@ class Hostel:
 
         self.visits = []  # List/array to keep track of visits
     def recordVisits(self, visitor:Visitor, resident:Resident):
-        entry = visitor.name  +  "is visiting"  +  resident.name  +  "in room"  +  resident.roomNumber
+        entry = visitor.name  +   "is visiting"  +   resident.name  +   "in room"  +  resident.roomNumber
         self.visits.append(entry)
 
     def showVisits(self):

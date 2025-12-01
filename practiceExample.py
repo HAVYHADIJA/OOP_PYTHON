@@ -371,10 +371,12 @@ print(SECTION_BREAK)
 print("3) MRO — METHOD RESOLUTION ORDER")
 
 class A:
-    def shout(self): print("A shouts")
+    def shout(self): 
+     print("A shouts")
 
 class B(A):
-    def shout(self): print("B shouts")
+    def shout(self): 
+        print("B shouts")
 
 class C(A):
     # C does not override shout() in the original notebook, using A's shout() if needed.

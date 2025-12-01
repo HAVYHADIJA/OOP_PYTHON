@@ -144,6 +144,9 @@ class Animal:
 class Dog(Animal):
     def make_sound(self):
         print("Woof woof")
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow Meow")
 
 #MULTIPLE INHERITANCE(METHOD RESOLUTION ORDER -MRO))
 class Anna:
